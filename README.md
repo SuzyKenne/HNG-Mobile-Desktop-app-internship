@@ -16,7 +16,7 @@ Ensure you have the following installed:
 ## Clone the Repository
 
 ```sh
-git clone https://github.com/SuzyKenne/HNG-Mobile-Desktop-app-internship.git
+git clone https://github.com/SuzyKenne/HNG-Mobile-Desktop-app-internship.git/Task-1
 # (Depending on the task you want to run)
 ```
 
