@@ -4,4 +4,6 @@ export default {
   medium: '#666',
   white: '#fff',
   decrypt: '#2196F3',
+  text: '#ccc',
+  decryptResult: '#e3f2fd',
 };
