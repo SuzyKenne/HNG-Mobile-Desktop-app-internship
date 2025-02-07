@@ -9,7 +9,7 @@ import {
 import React from 'react';
 import colors from '../config/colors';
 
-export default function WelcomeScreen() {
+export default function WelcomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
       {/* <StatusBar style="light" /> */}
@@ -18,7 +18,10 @@ export default function WelcomeScreen() {
         <Text style={styles.subtitle}>
           Encrypt and decrypt your messages with ease!
         </Text>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity
+          style={styles.button}
+          onPress={() => navigation.navigate('Home')}
+        >
           <Text style={styles.buttonText}>Get Started</Text>
         </TouchableOpacity>
       </View>
