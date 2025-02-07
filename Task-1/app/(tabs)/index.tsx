@@ -1,22 +1,9 @@
 import { StyleSheet, View, Text } from 'react-native';
-
-import { HelloWave } from '@/components/HelloWave';
-import ParallaxScrollView from '@/components/ParallaxScrollView';
-import { ThemedText } from '@/components/ThemedText';
-import { ThemedView } from '@/components/ThemedView';
+import WelcomeScreen from '../screens/WelcomeScreen';
+import GetStartedScreen from '../screens/GetStartedSreen';
 
 export default function HomeScreen() {
-  return (
-    <View>
-      <Text>Hello Task-1</Text>
-    </View>
-  );
+  return <GetStartedScreen />;
 }
 
-const styles = StyleSheet.create({
-  titleContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 8,
-  },
-});
+// const styles = StyleSheet.create({});
