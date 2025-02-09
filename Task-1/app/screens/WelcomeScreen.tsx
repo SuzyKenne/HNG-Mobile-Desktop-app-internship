@@ -9,7 +9,17 @@ import {
 import React from 'react';
 import colors from '../config/colors';
 
-export default function WelcomeScreen({ navigation }) {
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
+
+// Define the type for navigation stack parameters
+type RootStackParamList = {
+  Home: undefined;
+};
+
+// Define the type for the `navigation` prop
+type Props = NativeStackScreenProps<RootStackParamList, 'Home'>;
+
+export default function WelcomeScreen({ navigation }: Props) {
   return (
     <View style={styles.container}>
       {/* <StatusBar style="light" /> */}

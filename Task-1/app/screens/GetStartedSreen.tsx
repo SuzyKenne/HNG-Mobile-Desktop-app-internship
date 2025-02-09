@@ -2,7 +2,18 @@ import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import React from 'react';
 import colors from '../config/colors';
 
-export default function GetStartedScreen({ navigation }) {
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
+
+// Define the type for navigation stack parameters
+type RootStackParamList = {
+  GetStarted: undefined;
+  Encrypt: undefined;
+  Decrypt: undefined;
+};
+
+type Props = NativeStackScreenProps<RootStackParamList, 'GetStarted'>;
+
+export default function GetStartedScreen({ navigation }: Props) {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>What would like to do?</Text>
