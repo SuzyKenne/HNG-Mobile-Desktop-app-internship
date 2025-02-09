@@ -42,7 +42,7 @@ export default function DecryptScreen() {
           onChangeText={setSecretKey}
           secureTextEntry
         />
-        <Button title="Decrypt" onPress={handleDecrypt} color="#2196F3" />
+        <Button title="Decrypt" onPress={handleDecrypt} color="#666" />
         {decryptedText ? (
           <View style={styles.resultContainer}>
             <Text style={styles.resultLabel}>Decrypted text:</Text>
